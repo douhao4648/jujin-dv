@@ -8,17 +8,9 @@
   "bin": {
     "jjdv": "./bin/jjdv"
   },
-  "maintainers": [{
-      "name": "pengshaojun",
-      "email": "pengshaojun@91guoxin.com"
-    },
-    {
-      "name": "magaoting",
-      "email": "magaoting@91guoxin.com"
-    }
-  ],
-  "publishConfig": {
-    "registry": "http://nexus.guoxin.bj:8081/nexus/content/repositories/npm/"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/douhao4648/jujin-dv.git"
   },
   "dependencies": {
     "@antv/g2": "^3.0.5-beta.2",
