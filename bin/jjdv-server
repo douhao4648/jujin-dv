@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+require('gnode');
+
+program
+    .option('-p, --port <port>', 'port')
+    .option('-x, --proxy <proxy>', 'proxy')
+    .option("-r, --prefix <prefix>", "prefix")
+    .option('-c, --css', 'generate alone css file')
+    .parse(process.argv);
+
+require('../lib/server')({
+    port: program.port,
+    proxy: program.proxy,
+    prefix: program.prefix,
+    css: program.css,
+    globalConfig: require('../lib/configParser')(program.args)
+});

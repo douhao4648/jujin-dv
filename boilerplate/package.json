@@ -1,0 +1,16 @@
+{
+  "name": "jjdv-pages",
+  "version": "1.0.0",
+  "entry": [
+    "./src/index.jsx"
+  ],
+  "devDependencies": {
+    "jujin-dv": "*",
+    "antd": "*",
+    "react": "*"
+  },
+  "scripts": {
+    "dev": "jjdv server",
+    "build": "rm -rf dist && jjdv build"
+  }
+}

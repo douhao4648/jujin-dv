@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+require('gnode');
+
+program
+    .option('-o, --output <output>', 'build target path')
+    .option('-d, --debug', 'build without compress')
+    .option('-c, --css', 'build alone css file')
+    .parse(process.argv);
+
+require('../lib/build')({
+    output: program.output,
+    debug: program.debug,
+    css: program.css,
+    globalConfig: require('../lib/configParser')(program.args)
+});
