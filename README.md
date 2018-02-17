@@ -29,7 +29,7 @@
 
 > 1. 接 C3 在 xxx 命令行目录下，执行 xx1/xx2/.../jujin-dv/bin/jjdv server
 > 2. 接 C4 在 xxx 命令行目录下，执行 jjdv server
-> 3. 浏览器地址栏输入 http://localhost:8000 访问新建项目
+> 3. 启动 server 后，浏览器地址栏输入 http://localhost:8000 访问新建项目
 
 * E. 使用构建工具构建项目
 
