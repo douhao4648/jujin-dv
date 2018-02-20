@@ -35,7 +35,7 @@
 
 * 注意事项
 
-1. 构建工具基于 webpack，默认不打包 react react-dom react-router antd moment 需要在 html 中引入相应的 js 脚本；如果想要修改该规则，则可编辑 jujin-dv/lib/webpack.common.config.js 的如下代码片段
+> 构建工具基于 webpack，默认不打包 react react-dom react-router antd moment 需要在 html 中引入相应的 js 脚本；如果想要修改该规则，则可编辑 jujin-dv/lib/webpack.common.config.js 的如下代码片段
 
 ```javascript
 function resolveExternals(externals, globalConfig) {
@@ -59,18 +59,18 @@ function resolveExternals(externals, globalConfig) {
 a. jjdv server [-p|-x|-r|-c]
 
 > -p 参数表示 server 启动的端口号，默认为 8000。端口被占用时可通过 -p 参数指定端口号。
-
+>
 > -x 参数表示 server 代理地址，若指定 -x http://www.baidu.com 则所有请求会被转发到 baidu，并返回结果。
-
+>
 > -r 参数表示 server 代理转发的前缀，若指定 -r abc 则所有以 /abc 为前缀的请求才会被转发至 -x 指定的代理服务器。
-
+>
 > -c 参数表示是否独立打包 css 文件。
 
 b. jjdv build [-o|-d|-c]
 
 > -o 参数表示指定打包文件输出目录。
-
+>
 > -d 参数表示启用调试模式打包，不压缩输出文件。
-
+>
 > -c 参数同 jjdv server 命令。
 
