@@ -4,7 +4,7 @@
 
 * jujin-dv 是一款实现前后端分离开发的构建工具
 
-* 工具构建的前端项目默认基于 react 和 antd
+* 工具构建的前端项目可基于 react 和 antd
 > antd 即 [ant design](https://ant.design/docs/react/introduce-cn) 是蚂蚁金服旗下的企业级后台产品，有助于快速实现中后台前端需求
 
 ## 先决条件
