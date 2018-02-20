@@ -17,31 +17,19 @@
 
 * A. 下载构建工具
 
-> 1. 直接 git clone 该项目
-> 2. 通过 npm install -g jujin-dv 安装
+> 通过 npm install -g jujin-dv 安装。
 
-* B. 安装 node 包
+* B. 使用构建工具创建项目
 
-> 1. 接 A1 需要在项目根目录下通过命令行 npm install 安装 node 依赖包
-> 2. 接 A2 无需其他操作
+> 新建项目文件夹，例如：xxx。在 xxx 下打开命令行工具，执行 jjdv init 初始化一个前端项目。
 
-* C. 使用构建工具创建项目
+* C. 使用构建工具运行项目
 
-> 1. 新建项目文件夹，例如：xxx
-> 2. 在 xxx 下打开命令行工具
-> 3. 接 B1 随后执行 xx1/xx2/.../jujin-dv/bin/jjdv init
-> 4. 接 B2 随后执行 jjdv init
+> 在 xxx 命令行目录下，执行 jjdv server。启动 server 后，浏览器地址栏输入 http://localhost:8000 访问新建的项目。
 
-* D. 使用构建工具运行项目
+* D. 使用构建工具构建项目
 
-> 1. 接 C3 在 xxx 命令行目录下，执行 xx1/xx2/.../jujin-dv/bin/jjdv server
-> 2. 接 C4 在 xxx 命令行目录下，执行 jjdv server
-> 3. 启动 server 后，浏览器地址栏输入 http://localhost:8000 访问新建项目
-
-* E. 使用构建工具构建项目
-
-> 1. 接 D1 在 xxx 命令行目录下，执行 xx1/xx2/.../jujin-dv/bin/jjdv build
-> 2. 接 D2 在 xxx 命令行目录下，执行 jjdv build
+> 在 xxx 命令行目录下，执行 jjdv build 生成生产环境使用的 js、html 文件。
  
 ## 项目说明
 
