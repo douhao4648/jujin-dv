@@ -33,7 +33,7 @@
 
 * 注意事项
 
-> 构建工具基于 webpack，默认不打包 react react-dom react-router antd moment 需要在 html 中引入相应的 js 脚本；如果想要修改该规则，则可编辑 jujin-dv/lib/webpack.common.config.js 的如下代码片段
+> 构建工具基于 webpack，默认不打包 react react-dom react-router-dom antd moment 需要在 html 中引入相应的 js 脚本；如果想要修改该规则，则可编辑 jujin-dv/lib/webpack.common.config.js 的如下代码片段
 
 ```javascript
 function resolveExternals(externals, globalConfig) {
@@ -42,8 +42,8 @@ function resolveExternals(externals, globalConfig) {
         react: 'window.React',
         ReactDOM: 'window.ReactDOM',
         'react-dom': 'window.ReactDOM',
-        ReactRouter: 'window.ReactRouter',
-        'react-router': 'window.ReactRouter',
+        ReactRouterDOM: 'window.ReactRouterDOM',
+        'react-router-dom': 'window.ReactRouterDOM',
         antd: 'window.antd',
         moment: 'window.moment',
         'global-config': JSON.stringify(globalConfig),
