@@ -1,6 +1,6 @@
 {
   "name": "jujin-dv",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Developement Tool for JuJin Company's Data Visualization",
   "scripts": {},
   "author": "MGT",
@@ -56,7 +56,6 @@
     "lodash-decorators": "^4.5.0",
     "moment": "^2.20.1",
     "node-libs-browser": "^2.1.0",
-    "node-sass": "^4.7.2",
     "numeral": "^2.0.6",
     "object-assign": "^4.1.1",
     "omit.js": "^1.0.0",
