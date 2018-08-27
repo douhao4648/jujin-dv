@@ -1,6 +1,6 @@
 {
   "name": "jujin-dv",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Developement Tool for JuJin Company's Data Visualization",
   "scripts": {},
   "author": "MGT",
@@ -43,6 +43,7 @@
     "html-loader": "^0.5.5",
     "html-minifier": "^3.5.8",
     "intl": "^1.2.5",
+    "intl-messageformat": "^2.2.0",
     "koa": "^2.4.1",
     "koa-body": "^2.5.0",
     "koa-convert": "^1.2.0",
