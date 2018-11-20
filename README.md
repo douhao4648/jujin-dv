@@ -54,7 +54,7 @@ function resolveExternals(externals, globalConfig) {
 
 * 命令详解
 
-a. jjdv server [-p|-x|-r|-c]
+a. jjdv server [-p|-x|-r|-s|-c]
 
 > -p 参数表示 server 启动的端口号，默认为 8000。端口被占用时可通过 -p 参数指定端口号。
 >
@@ -62,6 +62,9 @@ a. jjdv server [-p|-x|-r|-c]
 >
 > -r 参数表示 server 代理转发的前缀，若指定 -r abc 则所有以 /abc 为前缀的请求才会被转发至 -x 指定的代理服务器。
 >
+> -s 参数表示 是否去除 -r 参数所表示的路径前缀 默认值为去除 当 -s false 时为不去除 
+> 例如：-x http://localhost:8080 -r abc 表示 /abc/test 访问的是 http://localhost:8080/test 如果加上 -s false 表示访问的是 http://localhost:8080/abc/test
+> 
 > -c 参数表示是否独立打包 css 文件。
 
 b. jjdv build [-o|-d|-c]
